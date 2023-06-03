@@ -37,7 +37,8 @@ class Recipe(
             }
             return recipeList
         }
-        fun loadJSONFromAsset(context: Context, fileName: String): String? {
+        
+        private fun loadJSONFromAsset(context: Context, fileName: String): String? {
             var json: String? = null
             try {
                 val inputStream = context.assets.open(fileName)

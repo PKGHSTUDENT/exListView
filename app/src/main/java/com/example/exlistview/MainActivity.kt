@@ -16,9 +16,38 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+//        var nameList = ArrayList<String>()
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
+//        nameList.add("name1")
 
+//        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, nameList)
+//        binding.recipeListView.adapter = adapter
         val recipeList = Recipe.getRecipesFromFile("recipes.json", this)
         val adapter = RecipeAdapter(this, recipeList)
-        listView.adapter = adapter
+        binding.recipeListView.adapter = adapter
     }
 }
